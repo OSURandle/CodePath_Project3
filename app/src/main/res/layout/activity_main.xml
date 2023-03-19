@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/dailygoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You reached your daily goal!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/lesson"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:text="Lesson complete!"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="110dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailygoal"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:textCursorDrawable="@null"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:text="+10 XP"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/lesson"
+        app:layout_constraintBaseline_toBaselineOf="@id/lesson"
+        android:textColor="#FFC107" />
+
+    <TextView
+        android:id="@+id/dogbone"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="DogBone bonus!"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/lesson"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lesson"
+        app:layout_constraintTop_toBottomOf="@+id/lesson"
+        android:textColorHint="@color/black"
+        android:textCursorDrawable="@null"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:text="+2 XP"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/dogbone"
+        app:layout_constraintBaseline_toBaselineOf="@id/dogbone"
+        android:textColor="#FFC107" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#2196F3"
+        android:text="Continue"
+        app:layout_constraintEnd_toEndOf="@+id/dogbone"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/dogbone"
+        app:layout_constraintTop_toBottomOf="@+id/dogbone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="@id/progressBar"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@id/progressBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screenshot_2023_03_19_163901" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="10dp"
+        android:max="100"
+        android:progress="100"
+        android:progressTint="#FFC107"
+
+        android:scaleX="1"
+        android:scaleY="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/dailygoal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
