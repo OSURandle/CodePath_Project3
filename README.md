@@ -40,7 +40,7 @@ The following EXTRA features are implemented:
 
 I have chosen to duplicate the following layout from the DuoLingo app:
 
-<img src='https://designvault.io/shot/903-1004200509/' title='Chosen Screenshot' width='' alt='Chosen Screenshot' />
+<img src='https://cdn.designvault.io/media/20221221164246/742ae968.jpg' title='Chosen Screenshot' width='' alt='Chosen Screenshot' />
 
 ## Video Demo
 
